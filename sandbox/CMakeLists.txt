@@ -1,0 +1,5 @@
+project("sandbox")
+set(VERSION 3.7.2)
+cmake_minimum_required(VERSION 2.2)
+add_definitions(-std=c++11)
+add_subdirectory(src bin)
