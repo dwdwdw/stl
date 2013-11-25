@@ -61,6 +61,9 @@ void print_tuple(const std::tuple<Args...> &tp)
 int
 main()
 {
+  std::string *p = (string*) new char[sizeof(string)];
+  new(p)string(10, '*');
+  cout<<*p<<endl;
   cout<<"=============== "<<"variadic function template"<< " =============="<<endl;
   print("Hello,", 123, ",", "World!");
   cout<<"=============== "<<"variadic template class"<< " =============="<<endl;
