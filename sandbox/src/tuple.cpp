@@ -53,7 +53,7 @@ get(Tuple<Rest...> &tp)
 int
 main()
 {
-  Tuple<int, string, double> tp(3, "2", 1.);
+  Tuple<int, string, double> tp(3, "2", 1.1);
   cout<<get<0>(tp)<<endl;
   cout<<get<1>(tp)<<endl;
   cout<<get<2>(tp)<<endl;
